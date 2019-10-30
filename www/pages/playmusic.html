@@ -1,0 +1,106 @@
+<!-- <div id="content">
+        <input type="file" id="thefile" accept="audio/*" />
+        <canvas id="canvas"></canvas>
+        <audio id="audio" controls></audio>
+    </div> -->
+
+<div class="row">
+    <h1 class="level-transition center-align">{{div_text}}</h1>
+
+    <div class="main-div" ng-class="{Blur: bgBlur}">
+        <canvas id="canvas"></canvas>
+        <div class="valign-wrapper" style="float: right;">
+            <i class="material-icons amber-text text-darken-2 animated star" id="star"
+                ng-class="{'fadeIn delay-2s' : fadeInClass, bounce : bounceClass, jello : jelloClass}"
+                ng-repeat="n in total_stars">star_rate</i>
+        </div>
+
+        <h5 class="animated flipInX delay-2s">LEVEL {{current_level}}</h5>
+        <!-- ng-class="{pulse : pulseClass}" -->
+
+        <div class="progress animated flipInX delay-2s">
+            <div class="progress-bar" role="progressbar" style="width:20%">
+                <div class="progress-bar orange lighten-2" role="progressbar" ng-style="fuckingMusic >= 1 && myObj">
+                    80's
+                </div>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width:20%">
+                <div class="progress-bar orange lighten-1" role="progressbar" ng-style="fuckingMusic >= 2 && myObj">
+                    90's
+                </div>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width:20%">
+                <div class="progress-bar orange darken-2" role="progressbar" ng-style="fuckingMusic >= 3 && myObj">
+                    2000's
+                </div>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width:20%">
+                <div class="progress-bar orange darken-3" role="progressbar" ng-style="fuckingMusic >= 4 && myObj">
+                    2010's
+                </div>
+            </div>
+            <div class="progress-bar" role="progressbar" style="width:20%">
+                <div class="progress-bar orange darken-4" role="progressbar" ng-style="fuckingMusic >= 5 && myObj">
+                    2019's
+                </div>
+            </div>
+        </div>
+
+        <div id="main-play" class="animated fadeIn delay-2s">
+            <div class="row">
+                <div class="col s12 animated rubberBand delay-4s" id="div_play">
+                    <!-- {{soundtrack}} -->
+                    <!-- <button class="waves-effect waves-light btn-small btn-choose" id="testTone" preload="metadata"
+                        ng-init="changeBtn" ng-click="playAudio(changeBtn)" ng-disabled="disableBtn">PLAY ME
+                    </button> -->
+                    <!-- <span class="waves-effect" alt="" id="playme_android" ng-click="playAudio(changeBtn)" ng-disabled="disableBtn"></span>    -->
+                    <img src="{{img_source}}" class="waves-effect" alt="" id="playme_android"
+                        ng-click="playAudio(changeBtn)" ng-disabled="disableBtn">
+
+                </div>
+            </div>
+            <div class="row text-center" id="div_options">
+                <div class="col s12" ng-repeat="option in options" style="margin-bottom:10px;">
+                    <button class="waves-effect waves-light btn-small btn-choices animated"
+                        ng-class="{shake : error, pulse : correct}" ng-click="chooseAns(ans=option)"
+                        ng-disabled="disableBtn">
+                        {{option}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="gameover" class="game-over">
+        <h1>GAME OVER</h1>
+
+        <h4 class="center-align">
+            <a href="#/" class="waves-effect waves-light amber darken-4 btn-large">
+                TRY AGAIN
+            </a>
+        </h4>
+    </div>
+
+    <div ng-show="summary" class="summary" id="summary">
+        <h1>SUMMARY</h1>
+
+        <h5 ng-repeat="s in summary_lvl">{{s[0]}} {{s[1]}} :
+
+
+            <span>{{totalScore[$index]}}/{{items}}</span>
+        </h5>
+    </div>
+</div>
+
+<!-- <div class="fixed-action-btn"> -->
+<!-- <button class="waves-effect waves-light btn-small" ng-click="BackButton()">
+        <i class="material-icons left">keyboard_return</i>
+        PLAY AGAIN</button> -->
+
+<!-- <a href="#/" class="waves-effect waves-light btn-small">
+        <i class="material-icons left">keyboard_return</i>
+        BACK
+    </a> -->
+<!-- </div> -->
+
+<!-- </div> -->

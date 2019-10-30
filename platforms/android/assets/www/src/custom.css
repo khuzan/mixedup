@@ -1,0 +1,244 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+@font-face{
+    font-family: 'Horizon';
+    src: url('assets/css/Horizon.otf');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    background-image: url('img/blackspeaker.jpg');
+    background-size: 100% 145%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#choose-genre {
+    padding: 5px;
+}
+
+#select-icon {
+    padding: 20px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+
+#choose-row {
+    margin-top: 50%;
+}
+
+.btn-choose {
+    width: 100%;
+    margin: 5px;
+    height: 110px;
+    ;
+}
+
+.btn-choices {
+    width: 100%;
+    height: 40px;
+}
+
+#choices_div {
+    margin-top: 205%;
+}
+
+#choose-title {
+    font-size: 35px;
+    background: red;
+}
+
+#main-play {
+    margin-top: 10%;
+}
+
+/* #div_play {
+    margin-top: 15%;
+} */
+
+#div_options {
+    margin-top: 20%;
+}
+
+/* .star-c-align{
+    margin-left: -110px;
+} */
+
+.correctAnswer {
+    background: green;
+}
+
+.wrongAnswer {
+    background: red;
+}
+
+#star {
+    width: 35px;
+}
+
+#mixed-up {
+    margin-top: 80px;
+    font-weight: bolder;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+#mixed-up p {
+    margin: 0;
+    font-family: 'Horizon';
+    letter-spacing: 3px;
+}
+
+.btn.disabled, .disabled.btn-large, .disabled.btn-small, .btn-floating.disabled, .btn-large.disabled, .btn-small.disabled, .btn-flat.disabled, .btn:disabled, .btn-large:disabled, .btn-small:disabled, .btn-floating:disabled, .btn-large:disabled, .btn-small:disabled, .btn-flat:disabled, .btn[disabled], .btn-large[disabled], .btn-small[disabled], .btn-floating[disabled], .btn-large[disabled], .btn-small[disabled], .btn-flat[disabled] {
+    pointer-events: none;
+    background-color: #26a69a !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #f5f5f5 !important;
+    cursor: default;
+}
+
+.level-transition {
+    z-index: 2;
+    position: absolute;
+    font-family: 'Horizon';
+    /* background: #00bcd4; */
+    top: 255px;
+    width: 100%;
+    /* padding: 10px; */
+    left: 0;
+    letter-spacing: 5px;
+    margin: 0;
+    text-shadow: 0 0 10px #36f47c;
+}
+
+
+/* GAME OVER */
+.game-over {
+    z-index: 2;
+    position: absolute;
+    /* background: #f44336; */
+    top: 100px;
+    left: 0;
+    /* border-radius: 5%; */
+    font-family: 'Horizon';
+    text-shadow: 0 0 100px #fff;
+    width: 100%;
+}
+
+.game-over h1 {
+    color: #FF9800;
+    text-align: center;
+    font-size: 80px;
+}
+
+.game-over h3 {
+    text-align: center;
+}
+
+/* SUMMARY */
+
+.summary {
+    z-index: 2;
+    position: absolute;
+    /* background: #f44336; */
+    top: 0px;
+    left: 0;
+    /* border-radius: 5%; */
+    font-family: 'Horizon';
+    text-shadow: 0 0 100px #fff;
+    width: 100%;
+}
+.summary h1{
+    margin-left: 5%;
+    color: #FF9800;
+}
+
+.summary h5{
+    margin-left: 22%;
+    color: #ffffff;
+    background: #FFC107;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.summary h5 span{
+    font-size: 18px;
+    color: #6ffffe;
+}
+
+/* TOTAL SCORE*/
+
+#total_score{
+    background: #ff5c00;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+
+#total_score p{
+    font-size: 25px;
+    margin: 0;
+}
+
+/* END */
+.Blur {
+    filter: blur(3px);
+}
+
+.main-div {
+    z-index: 1;
+    position: relative;
+}
+.main-div h5{
+    font-family: 'Horizon';
+}
+.main-div #div_options button{
+    border-radius: 50px;
+    background-color: #00BCD4 !important;
+}
+#image-bg{
+    /* background-image: url('img/headphone.jpg'); */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+#playme_android{
+    /* background-image: url('img/android.png'); */
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+}
+#android_logo_peeking{
+    position: absolute;
+    width: 25%;
+    right: 0;
+    bottom: 0;
+}
+.text-center{
+    text-align: center;
+}
+/*  */
+.progress{
+    height: 18px !important;
+}
+.progress-bar {
+    float: left;
+    width: 0%;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #8eb7d9;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}

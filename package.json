@@ -1,0 +1,23 @@
+{
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "displayName": "projectv2",
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-camera": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      }
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^6.3.0",
+    "cordova-browser": "~5.0.4",
+    "cordova-plugin-camera": "^4.1.0",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {}
+}
