@@ -14,10 +14,10 @@
     }
   },
   "dependencies": {
-    "cordova-android": "^6.3.0",
+    "cordova-android": "^12.0.0",
     "cordova-browser": "~5.0.4",
     "cordova-plugin-camera": "^4.1.0",
-    "node-sass": "^4.12.0"
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {}
 }
